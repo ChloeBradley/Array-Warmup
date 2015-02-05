@@ -11,14 +11,20 @@ end
 dogs = ["Fido", "Harleigh", "Mali", "Trixie", "Snow", "Victory"]
 
 def how_many_dogs(dogs)
+  dogs.length
 
 end
 
 def name_lengths(dogs)
-
+  collection_of_dog_name_lengths = []
+  dogs.each do |dog|
+    collection_of_dog_name_lengths.push(dog.length)
+end
+collection_of_dog_name_lengths
 end
 
 def reverse_dog_names(dogs)
+  dogs.reverse
 
 end
 
@@ -39,7 +45,7 @@ def sum_of_all_dog_name_lengths(dogs)
 end
 
 def dogs_with_long_names(dogs)
-  
+
 end
 
 puts "*"*80
